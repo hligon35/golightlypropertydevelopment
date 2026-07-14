@@ -47,6 +47,7 @@ projectForm.addEventListener('submit', (event) => {
     `Project details: ${data.get('details')}`,
   ].join('\n');
 
-  formStatus.textContent = 'Opening your messaging app…';
-  window.location.href = `sms:+12705196659?body=${encodeURIComponent(message)}`;
+  const subject = `Project inquiry: ${data.get('projectType')} — ${data.get('name')}`;
+  formStatus.textContent = 'Opening your email app…';
+  window.location.href = `mailto:info@gldevelopment.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 });
