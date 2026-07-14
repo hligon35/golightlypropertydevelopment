@@ -143,11 +143,54 @@
           <h2>Let’s build from<br /><em>the ground up.</em></h2>
         </div>
         <div class="contact-bottom reveal">
-          <a class="contact-call" href="tel:+12705196659"><span>Call to discuss your property</span><strong>(270) 519-6659</strong></a>
-          <div class="contact-meta">
-            <p><span>Based in</span>West Paducah, Kentucky</p>
-            <p><span>Service area</span>Western Kentucky &amp; surrounding region</p>
-          </div>
+          <form class="project-form" data-project-form>
+            <div class="form-grid">
+              <label>
+                <span>Name *</span>
+                <input type="text" name="name" autocomplete="name" required placeholder="Your name" />
+              </label>
+              <label>
+                <span>Phone *</span>
+                <input type="tel" name="phone" autocomplete="tel" required placeholder="(270) 555-0123" />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" placeholder="you@example.com" />
+              </label>
+              <label>
+                <span>Project location *</span>
+                <input type="text" name="location" autocomplete="street-address" required placeholder="City or property address" />
+              </label>
+              <label class="form-wide">
+                <span>Project type *</span>
+                <select name="projectType" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option>Site preparation</option>
+                  <option>Excavation and grading</option>
+                  <option>Concrete and property access</option>
+                  <option>Hauling and equipment</option>
+                  <option>Multiple services</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label class="form-wide">
+                <span>Tell us about the property *</span>
+                <textarea name="details" required rows="4" placeholder="What work do you need completed?"></textarea>
+              </label>
+            </div>
+            <div class="form-actions">
+              <p>Submitting opens a prefilled text message to Golightly Property Development.</p>
+              <button type="submit">Send project inquiry <span>↗</span></button>
+            </div>
+            <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+          </form>
+          <aside class="contact-aside">
+            <a class="contact-call" href="tel:+12705196659"><span>Prefer to call?</span><strong>(270) 519-6659</strong></a>
+            <div class="contact-meta">
+              <p><span>Based in</span>West Paducah, Kentucky</p>
+              <p><span>Service area</span>Western Kentucky &amp; surrounding region</p>
+            </div>
+          </aside>
         </div>
       </section>
     </main>
