@@ -116,11 +116,14 @@ a {
 
 .brand {
   position: relative;
-  z-index: 103;
   display: flex;
   align-items: center;
   gap: 0.9rem;
   min-width: 0;
+}
+
+.site-header > .brand {
+  z-index: 103;
 }
 
 .brand-logo {
@@ -1043,6 +1046,7 @@ footer {
 
 .footer-brand {
   display: inline-flex;
+  z-index: auto;
 }
 
 .footer-nav {
