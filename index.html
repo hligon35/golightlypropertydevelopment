@@ -15,18 +15,18 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Golightly Property Development home">
+      <a class="brand" href="index.html" aria-label="Golightly Property Development home">
         <img class="brand-logo" src="assets/gpd-logo.png" alt="" aria-hidden="true" />
         <span class="brand-name">Golightly <small>Property Development</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
-        <span></span><span></span><span></span><span class="sr-only">Open menu</span>
+        <span></span><span></span><span></span><span class="sr-only" data-menu-label>Open menu</span>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-nav>
-        <a href="#services">Services</a>
-        <a href="#work">Our work</a>
-        <a href="#about">About</a>
-        <a class="nav-cta" href="#contact">Start a project <span>↗</span></a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a class="nav-cta" href="contact.html">Start a project <span>↗</span></a>
       </nav>
     </header>
 
@@ -40,164 +40,93 @@
           <p class="eyebrow light">West Paducah, Kentucky</p>
           <h1>Groundwork for<br /><em>what comes next.</em></h1>
           <p class="hero-intro">We shape raw land into ready ground—combining skilled excavation, precise grading, concrete work and dependable hauling.</p>
-          <a class="text-link light" href="#work">Explore our work <span>↓</span></a>
+          <div class="hero-actions">
+            <a class="button button-light" href="contact.html">Start a project <span>↗</span></a>
+            <a class="text-link light" href="projects.html">Explore our work <span>→</span></a>
+          </div>
         </div>
-        <div class="hero-index" aria-hidden="true"><span>01</span><span class="line"></span><span>09</span></div>
+        <div class="hero-index" aria-hidden="true"><span>01</span><span class="line"></span><span>05</span></div>
       </section>
 
-      <section class="intro section-pad" id="about">
+      <section class="intro section-pad">
         <div class="section-label reveal"><span>01</span> Who we are</div>
         <div class="intro-content reveal">
           <p class="eyebrow">Built from the ground up</p>
           <h2>Thoughtful site work.<br /><em>Lasting results.</em></h2>
           <div class="intro-grid">
-            <p>Golightly Property Development helps property owners move confidently from untouched land to a finished, functional site. We bring hands-on attention to every phase—preparing the ground, solving drainage and access needs, and building a strong foundation for the next step.</p>
-            <p>Based in West Paducah, we serve projects across the surrounding Kentucky region with a straightforward approach: understand the land, plan the work and leave every property better prepared for what comes next.</p>
+            <p>Golightly Property Development helps property owners move confidently from untouched land to a finished, functional site.</p>
+            <div>
+              <p>Based in West Paducah, we bring hands-on attention to every phase and prepare each property for what comes next.</p>
+              <a class="text-link" href="about.html">Meet Golightly <span>→</span></a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="services section-pad" id="services">
+      <section class="services section-pad">
         <div class="services-head reveal">
           <div class="section-label"><span>02</span> What we do</div>
           <p class="eyebrow">Property development services</p>
           <h2>One capable partner.<br /><em>From dirt to done.</em></h2>
         </div>
         <div class="service-list">
-          <article class="service-item reveal">
+          <a class="service-item reveal" href="services.html#site-preparation">
             <span class="service-num">01</span>
             <div><h3>Site Preparation</h3><p>Preparing undeveloped and overgrown properties for construction, access and long-term use.</p></div>
             <span class="service-arrow">↗</span>
-          </article>
-          <article class="service-item reveal">
+          </a>
+          <a class="service-item reveal" href="services.html#excavation-grading">
             <span class="service-num">02</span>
-            <div><h3>Excavation &amp; Grading</h3><p>Earthmoving, rough and finish grading, drainage shaping, culvert work and site leveling.</p></div>
+            <div><h3>Excavation &amp; Grading</h3><p>Earthmoving, drainage shaping, culvert work and precise site leveling.</p></div>
             <span class="service-arrow">↗</span>
-          </article>
-          <article class="service-item reveal">
+          </a>
+          <a class="service-item reveal" href="services.html#concrete-access">
             <span class="service-num">03</span>
-            <div><h3>Concrete &amp; Access</h3><p>Clean, durable concrete surfaces and property access improvements built for everyday use.</p></div>
+            <div><h3>Concrete &amp; Access</h3><p>Durable concrete surfaces and property access improvements built for everyday use.</p></div>
             <span class="service-arrow">↗</span>
-          </article>
-          <article class="service-item reveal">
+          </a>
+          <a class="service-item reveal" href="services.html#hauling-equipment">
             <span class="service-num">04</span>
-            <div><h3>Hauling &amp; Equipment</h3><p>On-site material movement, debris handling and equipment transport that keeps work progressing.</p></div>
+            <div><h3>Hauling &amp; Equipment</h3><p>Material movement, debris handling and equipment transport that keeps work progressing.</p></div>
             <span class="service-arrow">↗</span>
-          </article>
+          </a>
         </div>
       </section>
 
-      <section class="work section-pad" id="work">
+      <section class="work section-pad">
         <div class="work-head reveal">
           <div class="section-label"><span>03</span> Selected work</div>
           <div><p class="eyebrow">In the field</p><h2>Work you can<br /><em>build on.</em></h2></div>
-          <p>A closer look at the land, equipment and finished details behind our recent work.</p>
+          <div class="work-summary"><p>A closer look at the land, equipment and finished details behind our recent work.</p><a class="text-link" href="projects.html">View all projects <span>→</span></a></div>
         </div>
-        <div class="project-grid">
-          <figure class="project project-wide reveal">
-            <div class="project-image"><img src="assets/excavation-culvert.jpg" alt="Excavator completing drainage and culvert work" loading="lazy" /></div>
+        <div class="project-grid project-grid-featured">
+          <figure class="project reveal">
+            <a class="project-image" href="projects.html"><img src="assets/excavation-culvert.jpg" alt="Excavator completing drainage and culvert work" loading="lazy" /></a>
             <figcaption><div><span>Excavation</span><h3>Drainage &amp; Site Shaping</h3></div><span>West Kentucky</span></figcaption>
           </figure>
           <figure class="project reveal">
-            <div class="project-image portrait"><img src="assets/concrete-drive.jpg" alt="New concrete drive with safety cones" loading="lazy" /></div>
+            <a class="project-image portrait" href="projects.html"><img src="assets/concrete-drive.jpg" alt="New concrete drive with safety cones" loading="lazy" /></a>
             <figcaption><div><span>Concrete</span><h3>Property Access</h3></div><span>West Paducah</span></figcaption>
           </figure>
-          <figure class="project reveal">
-            <div class="project-image portrait"><img src="assets/material-hauling.jpg" alt="Excavator loading material into a dump truck" loading="lazy" /></div>
-            <figcaption><div><span>Earthwork</span><h3>Material Moving</h3></div><span>West Kentucky</span></figcaption>
-          </figure>
-          <figure class="project project-wide reveal">
-            <div class="project-image"><img src="assets/finished-drive.jpg" alt="Completed concrete property entrance with landscaping" loading="lazy" /></div>
-            <figcaption><div><span>Site Finish</span><h3>Clean Completion</h3></div><span>West Paducah</span></figcaption>
-          </figure>
         </div>
       </section>
 
-      <section class="process section-pad">
-        <div class="process-visual reveal"><img src="assets/rough-grading.jpg" alt="Freshly graded access path across a development site" loading="lazy" /></div>
-        <div class="process-copy reveal">
-          <div class="section-label"><span>04</span> Our approach</div>
-          <p class="eyebrow">Clear work, start to finish</p>
-          <h2>Know the ground.<br /><em>Plan the outcome.</em></h2>
-          <ol>
-            <li><span>01</span><div><h3>Walk the property</h3><p>We begin with the land itself—its access, grade, drainage and intended use.</p></div></li>
-            <li><span>02</span><div><h3>Build the plan</h3><p>We define the right sequence, equipment and materials for the job.</p></div></li>
-            <li><span>03</span><div><h3>Do the groundwork</h3><p>We execute carefully, communicate clearly and keep the site moving forward.</p></div></li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="gallery" aria-label="More project photography">
-        <div class="marquee" aria-hidden="true"><span>Built on solid ground</span><i>✦</i><span>West Kentucky</span><i>✦</i><span>Built on solid ground</span></div>
-        <div class="gallery-grid">
-          <img src="assets/site-clearing.jpg" alt="Excavator clearing a development site" loading="lazy" />
-          <img src="assets/concrete-detail.jpg" alt="Finished concrete area with landscaping" loading="lazy" />
-          <img src="assets/equipment-transport.jpg" alt="Tractor secured for equipment transport" loading="lazy" />
-        </div>
-      </section>
-
-      <section class="contact section-pad" id="contact">
-        <div class="contact-top reveal">
-          <div class="section-label light"><span>05</span> Start a project</div>
+      <section class="home-cta section-pad">
+        <div class="home-cta-image reveal"><img src="assets/rough-grading.jpg" alt="Freshly graded access path across a development site" loading="lazy" /></div>
+        <div class="home-cta-copy reveal">
           <p class="eyebrow light">Have land that needs work?</p>
           <h2>Let’s build from<br /><em>the ground up.</em></h2>
-        </div>
-        <div class="contact-bottom reveal">
-          <form class="project-form" data-project-form>
-            <div class="form-grid">
-              <label>
-                <span>Name *</span>
-                <input type="text" name="name" autocomplete="name" required placeholder="Your name" />
-              </label>
-              <label>
-                <span>Phone *</span>
-                <input type="tel" name="phone" autocomplete="tel" required placeholder="(270) 555-0123" />
-              </label>
-              <label>
-                <span>Email</span>
-                <input type="email" name="email" autocomplete="email" placeholder="you@example.com" />
-              </label>
-              <label>
-                <span>Project location *</span>
-                <input type="text" name="location" autocomplete="street-address" required placeholder="City or property address" />
-              </label>
-              <label class="form-wide">
-                <span>Project type *</span>
-                <select name="projectType" required>
-                  <option value="" selected disabled>Select a service</option>
-                  <option>Site preparation</option>
-                  <option>Excavation and grading</option>
-                  <option>Concrete and property access</option>
-                  <option>Hauling and equipment</option>
-                  <option>Multiple services</option>
-                  <option>Other</option>
-                </select>
-              </label>
-              <label class="form-wide">
-                <span>Tell us about the property *</span>
-                <textarea name="details" required rows="4" placeholder="What work do you need completed?"></textarea>
-              </label>
-            </div>
-            <div class="form-actions">
-              <p>Submitting opens a prefilled email to Golightly Property Development.</p>
-              <button type="submit">Send project inquiry <span>↗</span></button>
-            </div>
-            <p class="form-status" role="status" aria-live="polite" data-form-status></p>
-          </form>
-          <aside class="contact-aside">
-            <a class="contact-call" href="tel:+12705196659"><span>Prefer to call?</span><strong>(270) 519-6659</strong></a>
-            <a class="contact-email" href="mailto:info@gldevelopment.com"><span>Prefer to email?</span><strong>info@gldevelopment.com</strong></a>
-            <div class="contact-meta">
-              <p><span>Based in</span>West Paducah, Kentucky</p>
-              <p><span>Service area</span>Western Kentucky &amp; surrounding region</p>
-            </div>
-          </aside>
+          <p>Tell us about your property, the work you need completed and where the project is located.</p>
+          <a class="button button-light" href="contact.html">Start a project <span>↗</span></a>
         </div>
       </section>
     </main>
 
     <footer>
-      <a class="brand footer-brand" href="#top"><img class="brand-logo" src="assets/gpd-logo.png" alt="" aria-hidden="true" /><span class="brand-name">Golightly <small>Property Development</small></span></a>
+      <div class="footer-top">
+        <a class="brand footer-brand" href="index.html"><img class="brand-logo" src="assets/gpd-logo.png" alt="" aria-hidden="true" /><span class="brand-name">Golightly <small>Property Development</small></span></a>
+        <nav class="footer-nav" aria-label="Footer navigation"><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></nav>
+      </div>
       <p>Land development, excavation, grading, concrete and hauling.</p>
       <div class="footer-bottom"><span>© <span data-year></span> Golightly Property Development</span><a href="#top">Back to top ↑</a></div>
     </footer>

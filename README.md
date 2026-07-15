@@ -1,6 +1,14 @@
 # Golightly Property Development
 
-A responsive, single-page marketing website for Golightly Property Development in West Paducah, Kentucky.
+A responsive, multi-page marketing website for Golightly Property Development in West Paducah, Kentucky.
+
+## Pages
+
+- Home
+- About
+- Services
+- Projects
+- Contact / project inquiry
 
 ## Run locally
 
