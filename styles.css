@@ -1,12 +1,12 @@
 :root {
-  --ink: #192019;
-  --forest: #1c251d;
-  --forest-dark: #111711;
-  --moss: #7f8c68;
-  --sand: #e9e2d5;
-  --cream: #f5f2eb;
+  --ink: #101a27;
+  --forest: #0f2b46;
+  --forest-dark: #071624;
+  --moss: #3e6d99;
+  --sand: #e9eef4;
+  --cream: #f7f9fb;
   --white: #fff;
-  --line: rgba(25, 32, 25, 0.18);
+  --line: rgba(15, 43, 70, 0.18);
   --serif: "Instrument Serif", Georgia, serif;
   --sans: "DM Sans", Arial, sans-serif;
   --page-pad: clamp(1.5rem, 6vw, 7rem);
@@ -124,6 +124,21 @@ a {
 
 .site-header > .brand {
   z-index: 103;
+}
+
+.brand-mark {
+  display: grid;
+  flex: 0 0 auto;
+  width: 56px;
+  height: 56px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  background: var(--forest);
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .brand-logo {
@@ -272,8 +287,8 @@ a {
 .hero-overlay {
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(14, 19, 14, 0.75) 0%, rgba(14, 19, 14, 0.38) 50%, rgba(14, 19, 14, 0.12)),
-    linear-gradient(0deg, rgba(14, 19, 14, 0.5), transparent 50%);
+    linear-gradient(90deg, rgba(7, 22, 36, 0.75) 0%, rgba(7, 22, 36, 0.38) 50%, rgba(7, 22, 36, 0.12)),
+    linear-gradient(0deg, rgba(7, 22, 36, 0.5), transparent 50%);
 }
 
 .hero-media img {
@@ -344,7 +359,7 @@ h2 {
 
 h1 em,
 h2 em {
-  color: #c4cdb3;
+  color: #8db9d9;
   font-weight: 400;
 }
 
@@ -1107,7 +1122,8 @@ footer > p {
     height: 82px;
   }
 
-  .brand-logo {
+  .brand-logo,
+  .brand-mark {
     width: 48px;
     height: 48px;
   }
@@ -1139,7 +1155,7 @@ footer > p {
     align-items: flex-start;
     justify-content: center;
     gap: 1.75rem;
-    background-color: #1c251d;
+    background-color: #0f2b46;
     color: white;
     font: 400 clamp(2.4rem, 9vw, 4.5rem) / 1 var(--serif);
     visibility: hidden;
@@ -1495,7 +1511,8 @@ footer > p {
     gap: 0.6rem;
   }
 
-  .brand-logo {
+  .brand-logo,
+  .brand-mark {
     width: 42px;
     height: 42px;
   }
@@ -1549,3 +1566,7 @@ footer > p {
     transition: none;
   }
 }
+
+
+/* Lewis Family LLC brand mark */
+.brand-mark { border-radius: 4px; }
