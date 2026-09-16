@@ -21,7 +21,7 @@ function openMenu() {
   header.classList.add('menu-open');
   document.body.classList.add('menu-open');
   document.body.style.position = 'fixed';
-  document.body.style.top = `-${lockedScrollY}px`;
+  document.body.style.top = '-' + lockedScrollY + 'px';
   document.body.style.left = '0';
   document.body.style.right = '0';
 }
@@ -98,19 +98,19 @@ if (projectForm) {
     event.preventDefault();
     const data = new FormData(projectForm);
     const message = [
-      'New project inquiry for Golightly Property Development',
+      'New restoration/property service inquiry for Lewis Family LLC',
       '',
-      `Name: ${data.get('name')}`,
-      `Phone: ${data.get('phone')}`,
-      `Email: ${data.get('email') || 'Not provided'}`,
-      `Project location: ${data.get('location')}`,
-      `Project type: ${data.get('projectType')}`,
+      'Name: ' + data.get('name'),
+      'Phone: ' + data.get('phone'),
+      'Email: ' + (data.get('email') || 'Not provided'),
+      'Property location: ' + data.get('location'),
+      'Service needed: ' + data.get('projectType'),
       '',
-      `Project details: ${data.get('details')}`,
+      'Details: ' + data.get('details'),
     ].join('\n');
 
-    const subject = `Project inquiry: ${data.get('projectType')} — ${data.get('name')}`;
+    const subject = 'Lewis Family LLC inquiry: ' + data.get('projectType') + ' — ' + data.get('name');
     if (formStatus) formStatus.textContent = 'Opening your email app…';
-    window.location.href = `mailto:info@gldevelopment.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+    window.location.href = 'mailto:lewisfamilytpc@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(message);
   });
 }
